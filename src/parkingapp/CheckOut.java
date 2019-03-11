@@ -34,8 +34,6 @@ public class CheckOut {
             System.out.println("Lost Ticket");
         } else {
             System.out.println((localCheckOutTime - localCheckInTime) + " hours parked  " +
-        //            (localCheckInTime < 12 ? localCheckInTime + "am" : (localCheckInTime - 12) + "pm") + " - " +
-        //            (localCheckOutTime < 12 ? localCheckOutTime + "am" : (localCheckOutTime - 12) + "pm"));
                    (localCheckInTime <= 12 ? localCheckInTime : (localCheckInTime - 12)) +
                    (localCheckInTime < 12 ? "am" : "pm") + " - " +
                    (localCheckOutTime <= 12 ? localCheckOutTime : (localCheckOutTime - 12)) +
