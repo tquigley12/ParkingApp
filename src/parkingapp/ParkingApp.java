@@ -107,7 +107,7 @@ public class ParkingApp {
         // Open output file
         PrintWriter outputFile = new PrintWriter(filename);
         
-        // Write all members of Student Club to output file
+        // Write all members of vehicle to output file
         if (!vehicle.isEmpty()) {
             for (int loop = 0; loop < vehicle.size(); loop++) {
                 outputFile.printf("%-4d%-4d%-4d%-5b%-20f\n", vehicle.get(loop).getVehicleID(), vehicle.get(loop).getCheckInTime(), 
